@@ -33,7 +33,7 @@ $(function () {
         //http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
 
         var apiKey= 'eba75ff06396bfdcd29274654ae005af'
-        var geocodeURL = 'http://api.openweathermap.org/geo/1.0/direct?q='+city+'&limit=1&appid='+apiKey;
+        var geocodeURL = 'https://api.openweathermap.org/geo/1.0/direct?q='+city+'&limit=1&appid='+apiKey;
         var cityLon; var cityLat;
         fetch(geocodeURL)
             .then(function (response) {
